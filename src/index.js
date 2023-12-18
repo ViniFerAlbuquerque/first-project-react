@@ -1,18 +1,27 @@
+//import ReactDOM from 'react-dom/client';
+//import Home from './containers/Home';
+//import Users from './containers/Users';
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import GlobalStyle from './globalStyle';
+import ReactDOM from 'react-dom';
+import GlobalStyle from "./styles/globalStyle";
+import Routes from './routes'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App /> <GlobalStyle />
-  </React.StrictMode>
+/*const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render()
+<Users />,
+)
+ReactDOM.render(
+  <>
+<Home /> <GlobalStyle/> 
+</>, */
+
+ReactDOM.render(
+  <>
+  <Routes />
+  <GlobalStyle />
+  </>,
+
+document.getElementById("root")
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+  
